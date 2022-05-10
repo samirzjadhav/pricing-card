@@ -161,7 +161,9 @@ section {
 }
 
 .team-member img {
-  width: 10em;
+  width: 100%;
+  height: auto;
+  max-width: 150px;
   border-radius: 0.25em;
   margin-right: 1em;
 }
@@ -189,4 +191,22 @@ section {
   order: 2;
   margin-left: 1em;
   margin-right: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  .plan {
+    margin-bottom: 40px;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: auto;
+  }
 }
